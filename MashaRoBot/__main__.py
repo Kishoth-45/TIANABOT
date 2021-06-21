@@ -74,43 +74,42 @@ def get_readable_time(seconds: int) -> str:
 
 
 
-PM_START_TEXT = """Hello, My name is ༒ 𝙏𝙄𝘼𝙉𝘼 ༒
+PM_START_TEXT = """Hello, My name is Anjal
 
-Hey , I am a Group Manager,
-Made specially for Managing Groups.
+Hey , I am a Anjal of God,
+Made specially for managing Group
 
-This Pro bot was made by [ℙℝ𝕀ℕℂ𝔼](https://t.me/prince_3011)
+This Pro bot was made by [ℙℝ𝕀ℕℂ𝔼](https://t.me/Khiladiking45)
 Click /help or use button below to find out more about how to use me to my full potential."""
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD ༒ 𝙏𝙄𝘼𝙉𝘼 ༒ TO YOUR GROUP ➕️", url="t.me/Tiana_Prince_bot?startgroup=true"),
+            text="➕️ ADD Anjal TO YOUR GROUP ➕️", url="t.me/GodOfAnjalbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="📱ABOUT", callback_data="masha_"),
         InlineKeyboardButton(text="⚜️HELP", callback_data="help_back"),
     ],
-   [
+    [
+        InlinekeyboardButton(text="creator",url="https://t.me/Khiladiking45"),
+    ],    
+    [
         InlineKeyboardButton(
-            text="🎵 MUSIC GROUP 🎧", url="http://t.me/MUSIC_AND_CHATS")
-   ],
-   [
+            text="✨Music BOT✨", url="https://t.me/Anjalmusicbot"),
         InlineKeyboardButton(
-            text="✨MY BF✨", url="http://t.me/prince_3011"),
-        InlineKeyboardButton(
-            text="⚜️CHANNEL⚜️", url="https://t.me/PRINCEBOTS"),
+            text="⚜️CHANNEL⚜️", url="https://t.me/Godofanjel_gban_logs"),
     ],
     [  
-        InlineKeyboardButton(text="👥SUPPORT GROUP👥", url="https://t.me/PRINCEBOTSUPPORT"),
+        InlineKeyboardButton(text="👥SUPPORT GROUP👥", url="https://t.me/GodOfAnjalsupport"),
     ], 
     
 ]
 
 HELP_STRINGS = """
-༒ 𝙏𝙄𝘼𝙉𝘼 ༒ WITH NEW FEATURES
+Anjal WITH NEW FEATURES
 
-꧁*CHECK ALL BUTTON BELOW TO EXPLORE EVERY COMMANDS OF TIANA*꧂
+꧁*CHECK ALL BUTTON BELOW TO EXPLORE EVERY COMMANDS OF Anjal꧂
 
 𖣘 *All commands can either be used with* `/` *or* `!`.
 
@@ -118,7 +117,7 @@ HELP_STRINGS = """
 """
 
 
-DONATE_STRING ="""CONTACT ME ON @PRINCE_3011"""
+DONATE_STRING ="""CONTACT ME ON @Khiladiking45"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -363,7 +362,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *TIANA*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Anjal*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
@@ -371,8 +370,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Masha's licensed under the GNU General Public License v3.0_
-                 Here is the [💾Repository](https://github.com/prince301102/tiana-2.0).
-                 If you have any question about masha, let us know at @princebotsupport.""",
+                 If you have any question about masha, let us know at @GodOfAnjalsupport.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
